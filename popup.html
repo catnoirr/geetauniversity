@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Explainer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Explainer</h1>
+    <div class="content">
+      <div class="toggle-container">
+        <label for="selection-toggle">Text Selection Highlight:</label>
+        <label class="switch">
+          <input type="checkbox" id="selection-toggle">
+          <span class="slider round"></span>
+        </label>
+        <span id="toggle-status">Disabled</span>
+      </div>
+      
+      <div class="toggle-container">
+        <label for="force-enable-toggle">Force Enable Copy:</label>
+        <label class="switch">
+          <input type="checkbox" id="force-enable-toggle">
+          <span class="slider round"></span>
+        </label>
+        <span id="force-status">Disabled</span>
+      </div>
+    </div>
+    <div id="status-message"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
